@@ -11,6 +11,21 @@
 <p class="post-author">written by <a href="/blog/{{ post.author.username }}"
     >{{ post.author.username }}</a> on {{ post.created.strftime('%m/%d/%Y') }}
 </p>
+<!--
+    %m - month 01-12
+    %d - day 01-31
+    %y - year 17
+    %Y - year 2017
+    %H - hour 00-23
+    %I - hour 01-12
+    %p - AM/PM
+    %M - minute 00-59
+    %a - weekday  Mon
+    %A - weekday  Monday
+    %w - weekday  0-6 sun-sat
+    %b - month  Feb
+    %B - month  February
+-->
 
 {% endfor %}
 
