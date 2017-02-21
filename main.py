@@ -64,7 +64,7 @@ class IndexHandler(BlogHandler):
 
     def get(self):
         """ List all blog users """
-        users = User.all()
+        users = User.all().order('username')
         t = jinja_env.get_template("index.html")
         response = t.render(users = users)
         self.response.write(response)
